@@ -1,0 +1,102 @@
+body
+{font-family: sans-serif;
+font-size: 16px;
+line-height: 1.4em;
+}
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 { font-size: 32px;}
+
+h2 {font-size:24px;}
+
+h2 {font-size:18px;}
+
+.textbox1 {
+    font-size: 32px;
+    font-family: sans-serif;
+    line-height: 1.4em;
+    padding: 5px 5px 5px 5px;
+}
+
+.textbox2 {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.4em;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.heading
+{height: 60px;
+width: 600px;
+background-color: #ff1493}
+
+.maintitle
+{
+height: 50%;
+width: 75%;
+background-color: #ffb6c1
+}
+
+.spacing
+{padding: 10px;
+}
+
+.inp
+{
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+}
+
+.button:hover
+{
+    background-color: #ffb6c1;
+}
+
+p.border
+{border-style: solid;
+width: 150px;
+padding: 10px;
+}
+
+
+p.border:first-letter
+{font-size: 32px}
+
+.form
+{text-align: right;
+ display: inline-block;
+}
+
+
+
+.col1, .col2, .col3
+{width: 200px;
+float: left;
+margin: 10px;
+}
+
+fieldset
+{
+    margin: 10px 10px 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    width: 400px;
+}
+
+a:link
+{text-decoration: none;
+}
+
+a:hover
+{color: deeppink;
+text-decoration: underline;
+}

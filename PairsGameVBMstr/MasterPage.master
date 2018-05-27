@@ -1,0 +1,143 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage2.master" AutoEventWireup="false" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<%@ MasterType VirtualPath ="~/MasterPage2.master"%>
+
+ 
+
+<asp:Content ID="PairsGameContent" ContentPlaceHolderID="ContentPlaceHolder1" runat ="server">
+  <!DOCTYPE html>
+                  
+  <div class="group">
+      <p class="border col1"><asp:label ID="welcome" runat="server" Text="Welcome!" /></p>
+      <p class="border col2">Lowest Score Wins</p>
+      <p class="border col3">Start Now <asp:Button ID="StartGame" runat="server" CssClass="inp button" Text ="Play" OnClick ="Start_Game" visable="false" Width="30%"></asp:Button></p>
+      </div>
+        
+      <asp:Button ID="ResetTiles" runat="server"  CssClass ="inp button" Text ="Uh Oh.. Tiles don't Match.  Click to Reset" OnClick ="Reset_Tiles" Visible="false" ></asp:Button>
+        <asp:Table ID="Table1" runat="server" visible="false">
+            <asp:TableRow runat="server">
+                <asp:TableCell ID="TableCell1" runat="server"> 
+                    <asp:ImageButton id ="ImageButton1" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick">
+                    </asp:ImageButton>
+                    <asp:Label ID="label1" runat="server" Text="1"></asp:Label>
+                   </asp:TableCell>
+                <asp:TableCell ID="TableCell2" runat="server">
+                    <asp:ImageButton id ="ImageButton2" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label2" runat="server" Text="1"></asp:Label>
+                     </asp:TableCell>
+                <asp:TableCell ID="TableCell3" runat="server">
+                    <asp:ImageButton id="ImageButton3" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label3" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow runat="server">
+                         <asp:TableCell ID="TableCell4" runat="server"> 
+                    <asp:ImageButton id ="ImageButton4" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick">
+                    </asp:ImageButton>
+                    <asp:Label ID="label4" runat="server" Text="1"></asp:Label>
+                   </asp:TableCell>
+                <asp:TableCell ID="TableCell5" runat="server">
+                    <asp:ImageButton id ="ImageButton5" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label5" runat="server" Text="1"></asp:Label>
+                     </asp:TableCell>
+                <asp:TableCell ID="TableCell6" runat="server">
+                    <asp:ImageButton id="ImageButton6" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label6" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+
+     <asp:Table ID="Table2" runat="server" Visible="false">
+            <asp:TableRow runat="server">
+                <asp:TableCell ID="TableCell7" runat="server"> 
+                    <asp:ImageButton id ="ImageButton7" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick">
+                    </asp:ImageButton>
+                    <asp:Label ID="label7" runat="server" Text="1"></asp:Label>
+                   </asp:TableCell>
+                <asp:TableCell ID="TableCell8" runat="server">
+                    <asp:ImageButton id ="ImageButton8" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label8" runat="server" Text="1"></asp:Label>
+                     </asp:TableCell>
+                <asp:TableCell ID="TableCell9" runat="server">
+                    <asp:ImageButton id="ImageButton9" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label9" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+                  <asp:TableCell ID="TableCell10" runat="server">
+                    <asp:ImageButton id="ImageButton10" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label10" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow runat="server">
+                         <asp:TableCell ID="TableCell11" runat="server"> 
+                    <asp:ImageButton id ="ImageButton11" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick">
+                    </asp:ImageButton>
+                    <asp:Label ID="label11" runat="server" Text="1"></asp:Label>
+                   </asp:TableCell>
+                <asp:TableCell ID="TableCell12" runat="server">
+                    <asp:ImageButton id ="ImageButton12" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label12" runat="server" Text="1"></asp:Label>
+                     </asp:TableCell>
+                <asp:TableCell ID="TableCell13" runat="server">
+                    <asp:ImageButton id="ImageButton13" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label13" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+                <asp:TableCell ID="TableCell14" runat="server">
+                    <asp:ImageButton id="ImageButton14" runat="server" imageurl="background.jpg" width="150" height="150" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label14" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+
+    <asp:Table ID="Table3" runat="server" Visible="false">
+            <asp:TableRow runat="server">
+                <asp:TableCell ID="TableCell15" runat="server"> 
+                    <asp:ImageButton id ="ImageButton15" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick">
+                    </asp:ImageButton>
+                    <asp:Label ID="label15" runat="server" Text="1"></asp:Label>
+                   </asp:TableCell>
+                <asp:TableCell ID="TableCell16" runat="server">
+                    <asp:ImageButton id ="ImageButton16" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label16" runat="server" Text="1"></asp:Label>
+                     </asp:TableCell>
+                <asp:TableCell ID="TableCell17" runat="server">
+                    <asp:ImageButton id="ImageButton17" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label17" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+                  <asp:TableCell ID="TableCell18" runat="server">
+                    <asp:ImageButton id="ImageButton18" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label18" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+                          <asp:TableCell ID="TableCell19" runat="server">
+                    <asp:ImageButton id="ImageButton19" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label19" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow runat="server">
+                         <asp:TableCell ID="TableCell20" runat="server"> 
+                    <asp:ImageButton id ="ImageButton20" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick">
+                    </asp:ImageButton>
+                    <asp:Label ID="label20" runat="server" Text="1"></asp:Label>
+                   </asp:TableCell>
+                <asp:TableCell ID="TableCell21" runat="server">
+                    <asp:ImageButton id ="ImageButton21" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label21" runat="server" Text="1"></asp:Label>
+                     </asp:TableCell>
+                <asp:TableCell ID="TableCell22" runat="server">
+                    <asp:ImageButton id="ImageButton22" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label22" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+                <asp:TableCell ID="TableCell23" runat="server">
+                    <asp:ImageButton id="ImageButton23" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label23" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+                          <asp:TableCell ID="TableCell24" runat="server">
+                    <asp:ImageButton id="ImageButton24" runat="server" imageurl="background.jpg" width="100" height="100" OnClick="ButtonClick"></asp:ImageButton>
+                    <asp:Label ID="label24" runat="server" Text="1"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder>
+   
+    
+</asp:Content>
